@@ -11,8 +11,36 @@ header {
     top: 50%; left: 15px;
   }
 
+  nav,
+  nav ul,
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+
   nav {
     position: absolute;
     top: 50%; right: 15px;
   }
+
+  ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+
+    &.last {
+      margin: 0;
+    }
+
+    a {
+      font-size: 19px;
+      line-height: normal;
+      color: black;
+    }
+
+
+  }
+
+
 }
