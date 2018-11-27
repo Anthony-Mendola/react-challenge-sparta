@@ -1,8 +1,21 @@
-body {
-  font-size: 10px;
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #18a323;
+  color: black;
+  height: 88px;
 }
 
-body a {
-  color: black;
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+header nav {
+  position: absolute;
+  top: 50%;
+  right: 15px;
 }
 /*# sourceMappingURL=default.css.map */
