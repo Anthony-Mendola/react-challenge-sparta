@@ -4,7 +4,9 @@ class Footer extends Component {
   render() {
     return (
   <footer>
-Footer
+    <span>
+ 2017 - SPARTA PLAESENT - <a href="#">INSTAGRAM</a> <a href="#">FACEBOOK</a> <a href="#">TWITTER</a>
+ </span>
   </footer>
     );
   }
