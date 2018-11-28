@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 
-class Footer extends Component {
-  render() {
-    return (
-  <footer>
-    <span>
- 2017 - SPARTA PLAESENT - <a href="#">INSTAGRAM</a> <a href="#">FACEBOOK</a> <a href="#">TWITTER</a>
- </span>
-  </footer>
-    );
-  }
-}
+const Footer = () => {
+  return (
+    <footer>
+      <div className="footer">
+      <span className="copyright">© 2017
+      </span> 
+      <span className="name">SPARTA PLAESENT</span> 
+      <span className="social-media">
+      <a className="link" href="#">INSTAGRAM</a> - <a className="link" href="#">FACEBOOK</a> - <a className="link" href="#">TWITTER</a></span></div>
+    </footer>
+  );
+};
 
 export default Footer;

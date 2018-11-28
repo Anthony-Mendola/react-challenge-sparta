@@ -1,3 +1,52 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Caslon;
+  src: url(../fonts/ACaslonPro-Regular.otf);
+}
+
+@font-face {
+  font-family: Springville;
+  src: url(../fonts/Springville-Regular3.otf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a.link {
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-transform: uppercase;
+  border-bottom: thin #aaa solid;
+  cursor: pointer;
+}
+
+a.link:hover {
+  border-color: black;
+}
+
+.main {
+  list-style: none;
+  margin-top: 122px;
+}
+
+@media (max-width: 700px) {
+  .main {
+    margin-top: 50px;
+  }
+}
+
 .header {
   z-index: 100;
   top: 0;
@@ -87,6 +136,40 @@ ul.nav img {
     margin-right: 20px;
   }
   ul.nav :not(:last-child) {
+    display: none;
+  }
+}
+
+footer {
+  font-family: arial, sans-serif;
+  font-size: 11px;
+  padding: 75px 0;
+  text-align: center;
+  letter-spacing: .1px;
+}
+
+footer .name::before {
+  content: '— ';
+}
+
+footer .name::after {
+  content: ' -';
+}
+
+@media (max-width: 700px) {
+  footer {
+    padding: 10px 0 40px 0;
+  }
+  .social-media {
+    display: block;
+  }
+  .copyright {
+    display: block;
+  }
+  .name::before {
+    display: none;
+  }
+  .name::after {
     display: none;
   }
 }
