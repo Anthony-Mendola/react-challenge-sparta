@@ -1,46 +1,62 @@
-header {
-  position: relative;
-  display: block;
+//header
+.header {
+  z-index: 100;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  height: 122px;
+  @media (max-width: 700px) {
+    height: 50px;
+  }
+  position: fixed;
   width: 100%;
-  background: rgb(24, 163, 35);
-  color: black;
-  height: 88px;
-
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    background: white;
+   
+  }
   .logo {
-    position: absolute;
-    top: 50%; left: 15px;
-  }
-
-  nav,
-  nav ul,
-  nav ul li {
-    margin: 0;
-    padding: 0;
-  }
-
-
-  nav {
-    position: absolute;
-    top: 50%; right: 15px;
-  }
-
-  ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 10px;
-
-    &.last {
-      margin: 0;
+    height: 35px;
+    img {
+      display: flex;
+      height: 100%;
     }
-
-    a {
-      font-size: 19px;
-      line-height: normal;
-      color: black;
+    margin-left: 10%;
+    width: 196px;
+    @media (max-width: 700px) {
+      margin-top: 0;
+      margin-left: 20px;
     }
-
-
   }
+}
 
-
+ ul.nav {
+  font-family: arial, sans-serif;
+  margin-right: 10%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: grey;
+  li {
+    margin-left: 20px;
+  }
+  img {
+    margin-top: 2px;
+    position: relative;
+  }
+  @media (max-width: 700px) {
+    margin-right: 20px;
+    :not(:last-child) {
+      display:none;
+    }
+  }
 }

@@ -6,11 +6,12 @@ const Header = () => {
     return (
      <header>
           <div className="header">
+                <div className="header-wrap">
                 <div className="logo">
                     <img src={Logo} className="" alt="Sparta Plaesent" />  
                 </div>
-                <nav className="site--nav">
-                    <ul>
+                
+                    <ul className="nav">
                         <li>
                             <a href="#">
                                 212-555-5555
@@ -23,7 +24,8 @@ const Header = () => {
                           <a href="#"><img src={menu} className="menu" alt="menu"/></a>
                           </li>
                     </ul>
-                </nav>
+                
+                </div>
             </div>
      
      </header>
